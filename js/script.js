@@ -5,26 +5,49 @@
 // con peso minore utilizzando destructuring e template literal
 
 
-var Bici = [
+const bici = [
     {
-    'nome' : 'x2000',
-     'peso' : 8
+    nome : 'x2000',
+     peso : 8
 
     },
     {
-     'nome' : 'fusion',
-     'peso' : 7
+     nome : 'fusion',
+     peso : 7
 
     },
     {
-     'nome' : 'sonic',
-     'peso' : 5
+     nome: 'sonic',
+     peso : 5
 
     }
 
 
  ];
 
+
+ let pesoMin = bici[0];
+
+ for( let i = 1; i < bici.length; i++){
+     if(bici[i].peso < pesoMin.peso){
+         pesoMin = bici[i];
+     }
+ }
+const {peso,nome}= bici;
+ console.log(nome,peso);
+ console.log(pesoMin)
+
+
+ 
+
+ document.getElementById('container').innerHTML = 
+
+ `
+ <ul>
+   <li> ${bici}</li>
+ </ul>  
+
+ `;
 
 // Snack2 
 
