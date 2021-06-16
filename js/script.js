@@ -33,14 +33,16 @@
           pesoMin = bici[i];
       }
   }
+  
 
+//   Utilizzo il Destructuring
 
  const {peso,nome}= pesoMin;
   console.log(nome,peso);
-  console.log(pesoMin)
+  console.log(pesoMin);
 
 
-  
+//   Utilizzo il template Literal
 
   document.getElementById('container').innerHTML = 
 
@@ -106,12 +108,15 @@ const squadre = [
     
      console.log(squadre);
 
-
+    //   creo un array e utilizzo destructuring
 
      const newSquadre = [];
 
      for( let i = 0;  i < squadre.length; i++){
-         const {nome, falliSubiti} = squadre[1];
+         const {nome, falliSubiti} = squadre[i];
+         newSquadre.push({
+          nome, falliSubiti
+         });
      }
 
      console.log(newSquadre);
