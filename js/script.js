@@ -46,7 +46,9 @@
 
   `
   <ul>
-    <li> ${bici}</li>
+    <li> ${nome}</li>
+    <li> ${peso}</li>
+
   </ul>  
 
   `;
