@@ -38,7 +38,7 @@
   console.log(pesoMin)
 
 
- 
+  
 
   document.getElementById('container').innerHTML = 
 
@@ -49,7 +49,7 @@
 
   `;
 
- Snack2 
+//  Snack2 
 
 // Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti,
 //  falli subiti. Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
@@ -57,7 +57,7 @@
 //  Infine usando la destrutturazione creiamo un nuovo array i cui elementi sono sempre degli oggetti 
 //  che contengono solo nomi e falli subiti e stampiamo tutto in console.
 
-var squadre = [
+const squadre = [
         {
         'nome' : 'Milan',
          'puntiFatti' : 0,
@@ -81,8 +81,8 @@ var squadre = [
      ];
     
     
-       var punti = squadre.punti;
-       var subiti = squadre.falli;
+       let punti = squadre.punti;
+       let subiti = squadre.falli;
     
     
 //    uso le arrow function
@@ -107,7 +107,7 @@ var squadre = [
      const newSquadre = [];
 
      for( let i = 0;  i < squadre.length; i++){
-         const{nome, falliSubiti} = squadre[1]
+         const {nome, falliSubiti} = squadre[1];
      }
 
      console.log(newSquadre);
