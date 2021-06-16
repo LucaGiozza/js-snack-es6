@@ -33,7 +33,9 @@
           pesoMin = bici[i];
       }
   }
- const {peso,nome}= bici;
+
+
+ const {peso,nome}= pesoMin;
   console.log(nome,peso);
   console.log(pesoMin)
 
